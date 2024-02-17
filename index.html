@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Hero Poribohon</title>
+    <!-- daisy UI and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body class="font-raleway">
+
+    <header class="container mx-auto lg:px-44 px-8 py-8">
+        <nav class="flex justify-between items-center py-10">
+            <div class="">
+                <h1 class="text-3xl font-extrabold">P-Ticket</h1>
+            </div>
+            <div
+                class="md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
+                    <li>
+                        <a class="text-base " href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class=" text-base" href="#">About</a>
+                    </li>
+                    <li>
+                        <a class=" text-base " href="#">Destination</a>
+                    </li>
+                    <li>
+                        <a class=" text-base " href="#">Search</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="flex border-2 border-green-300 w-28 py-2 justify-center bg-green-100 rounded-md">
+                <a class="text-green-500">Bus</a>
+                <img src="./images/bus-icon.png" alt="" class="pl-2">
+            </div>
+        </nav>
+
+        <!-- banner section -->
+        <div class="w-full">
+            <div class=" grid grid-cols-1 w-full">
+                <img src="./images/banner.png" class="w-full" />
+                <div class="absolute lg:py-16 lg:px-72 w-auto">
+                    <h1 class="text-6xl sm:ml-6 text-white text-center w-[742px]font-extrabold">End-to-End Travel With <br> <span class="text-green-700">P Paribahan</span></h1>
+                    <p class="w-[691px] h-[60px] text-center text-white">Imagine rolling down scenic highways, the world unfolding like a storybook through your window. Bus travel offers a unique perspective,</p>
+                    <button class="btn btn-primary absolute bg-green-500 justify-center items-center">By Ticket</button>
+                </div>
+                <div>
+                    <div class="absolute -bottom-8 rounded-xl bg-gray-200 ml-9  py-7 w-36 h-10 border-b-green-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+</body>
+
+</html>
