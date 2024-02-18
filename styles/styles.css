@@ -6,5 +6,21 @@
 .font-inter {
   font-family: "Inter", sans-serif;
 }
-
-
+.popup{
+  width: 400px;
+  height: 350px;
+  background: #fff;
+  border-radius: 12px;
+  text-align: center;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50% ) scale(0.1);
+  text-align: center;
+  pad: 0 30px 30px;
+  color:black;
+  visibility: hidden;
+}
+.open-popup{
+  visibility: visible;
+  transform: translate(-50%,-50% ) scale(1);
+}
