@@ -36,13 +36,13 @@ btn.addEventListener("click", function () {
     const couponCode = couponInput.split(" ").join("").toUpperCase();
     if (totalPrice >= 550) {
         if (couponCode === "NEW15") {
-            const discountPrice = totalPrice * 0.15;
-            const couponPrice = totalPrice - discountPrice;
-
+            const couponNew15 = totalPrice * 0.15;
+            const couponPrice = totalPrice - couponNew15;
             const restTotal = document.getElementById("grandTotal");
             restTotal.innerText = couponPrice;
-        } else {
-            alert("need valid coupon")
+            document.getElementById("couponInput").value = "";
         }
+        }else {
+            alert("need valid coupon")
     }
 })
