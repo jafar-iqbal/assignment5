@@ -27,3 +27,22 @@ for (let i = 0; i < busSeat.length; i++) {
       document.getElementById("totalPrice").innerText = totalPrice;
   });
 }
+
+
+const btn = document.getElementById("apply-btn");
+btn.addEventListener("click", function () {
+    // value input
+    const couponInput = document.getElementById("couponInput").value;
+    const couponCode = couponInput.split(" ").join("").toUpperCase();
+    if (totalPrice >= 550) {
+        if (couponCode === "NEW15") {
+            const discountPrice = totalPrice * 0.15;
+            const couponPrice = totalPrice - discountPrice;
+
+            const restTotal = document.getElementById("grandTotal");
+            restTotal.innerText = couponPrice;
+        } else {
+            alert("need valid coupon")
+        }
+    }
+})
